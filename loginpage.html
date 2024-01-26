@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-green-100">
+    <div id="containerMain" class="flex flex-row bg-white w-[80%] h-[35rem] m-auto mt-[5rem] shadow-xl shadow-slate-300">
+        <div class="basis-1/2 p-5">
+            <div class="container-nav flex">
+                <div class="ml-5"><a href="index.html">Back</a></div>
+                <div class="ml-[26rem] text-right"><a href="#">Register</a></div>
+            </div>
+
+            <div class="container-login px-20">
+                <h1 class="mt-7 text-2xl font-bold">Login</h1>
+                <p class="mt-3">Welcome! Please fill username and password to sign in into your account.</p>
+
+                <div class="form-container mt-6">
+                    <form>
+                        <input class="bg-slate-200 mb-5 p-2 px-5 rounded-md w-full peer" required type="email"
+                            placeholder="Type your email" id="email">
+                        <p class="-mt-4 invisible peer-invalid:visible text-pink-600 ">Please enter your valid email</p>
+
+                        <input class="bg-slate-200 mb-3 p-2 px-5 rounded-md w-full peer" required type="password"
+                            placeholder="Type your password" id="password">
+                        <p class="-mt-4 invisible peer-invalid:visible text-pink-600 ">Please enter your valid password
+                        </p>
+
+                        <p class="text-right mb-5"><a href="#">Forgot your password?</a></p>
+
+                        <button
+                            class="bg-sky-600 text-center p-2 w-full rounded-full text-white hover:scale-105 duration-100"
+                            onclick="dataCollect()">Login Now</button>
+                    </form>
+                </div>
+
+                <div class="mt-6 p-3 border-t-2 border-slate-400">
+                    <p class="text-center">You can also login with:</p>
+                    <div class="mt-3 flex items-center justify-center">
+                        <svg class="mr-10 h-8 w-8 bg-sky-600 text-white" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+
+                        <svg class="mr-10 h-8 w-8 text-sky-600" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <path d="M17.788 5.108A9 9 0 1021 12h-8" />
+                        </svg>
+
+                        <svg class="h-8 w-8 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="basis-1/2 bg-[url('foto.jpeg')] bg-cover">
+        </div>
+    </div>
+    <div id="dataContainer"></div>
+
+    <script>
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        function dataCollect(){
+
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            console.log(email);
+            console.log(password);
+
+            var current = document.getElementById('dataContainer');
+
+            current.appendChild(email);
+            current.appendChild(password);
+        }
+    </script>
+
+</body>
+
+</html>
