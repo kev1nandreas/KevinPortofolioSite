@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+            scroll-margin-top: 8rem;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="container-header text-white bg-sky-500" id="home">
+
+        <div class="bg-sky-500 p-2 fixed top-0 right-0 left-0 ">
+            <div class="relative border-2 border-red-500">
+                <div class="font-bold text-center text-xl inline-block ml-4 lg:ml-32">Kevin Andreas</div>
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="absolute right-3 top-0 md:hidden" height="32px" fill="#ffffff" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+            
+                <div class="absolute text-center hidden md:inline-block right-20 top-[2px]">
+                    <a href="#home" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Home</a>    
+                    <a href="#education" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Education</a>
+                    <a href="#activity" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Activity</a>
+                    <a href="#experience" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Experience</a>
+                    <a href="loginpage.html" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Log In</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="relative">
+            <div class="p-4 pt-16 md:w-[50%] md:ml-10">
+                <h1 class="md:mt-16 md:ml text-3xl md:text-5xl font-bold mt-4">I am Kevin Andreas</h1>
+                <h1 class="text-2xl md:text-4xl">Informatics Student</h1>
+                <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque explicabo dolores iure aut quisquam hic, alias quidem facere, ipsa, repudiandae optio incidunt adipisci dicta voluptatum quod natus. Nobis, harum nostrum!</p>
+                <div class="flex">
+                    <a class="rounded-md p-3 pl-4 md:w-32 md:h-13 bg-blue-700" href="https://api.whatsapp.com/send?phone=6287895872546" target="_blank"><button>Reach Me &RightArrow;</button></a>
+                    <a class="rounded-md p-3 md:w-40 md:h-13 ml-3 bg-white text-blue-700" href="#"><button >View Portofolio &RightArrow;</button></a>
+                </div>
+                <div class="flex mt-7 mb-3">
+                    <a href="#" class="mr-8">&raquo; Instagram</a>
+                    <a href="#" class="mr-8">&raquo; Twitter</a>
+                    <a href="#" class="mr-8">&raquo; Linked In</a>
+                </div>
+            </div>
+
+            <img src="img/selfphoto.png" alt="" class="hidden md:inline-block absolute md:-right-9 lg:right-14 bottom-0 w-[32rem] border-2">
+        </div>
+    </div>
+
+    <div class="md:mx-52 md:mt-10 p-5">
+        <div id="education" class="">
+            <h1 class="md:text-5xl text-4xl font-bold">Education</h1>
+            <div class="mt-5 md:flex">
+                <div class="bg-slate-200 rounded-lg md:basis-1/2 p-8 w-full mt-5">
+                    <h1 class="text-3xl font-bold">2020 - 2023</h1>
+                    <p class="text-2xl">Natural Science</p>
+                    <div class="flex items-center">
+                        <img src="img/darmayudhalogo.png" alt="Darma Yudha" class="h-28">
+                        <p class="my-2 font-bold text-xl">Darma Yudha Senior High School Pekanbaru</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo est, necessitatibus cumque distinctio atque hic facere aut repellendus a illo amet ab magni odit nulla ipsum, fuga tempore ea debitis?</p>
+                </div>
+
+                <div class="bg-slate-200 rounded-lg md:basis-1/2 p-8 w-full md:ml-5 mt-5">
+                    <h1 class="text-3xl font-bold">2023 - Now</h1>
+                    <p class="text-2xl">Informatics Engineering</p>
+                    <div class="flex items-center">
+                        <div class="h-28">
+                            <img src="img/itslogo.png" alt="ITS" class="h-[6rem] mt-2">
+                        </div>
+                        <p class="my-2 font-bold text-xl">Sepuluh Nopember Institute of Technology</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo est, necessitatibus cumque distinctio atque hic facere aut repellendus a illo amet ab magni odit nulla ipsum, fuga tempore ea debitis?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="experience">
+        <h1 class="text-5xl font-bold text-center mt-96">Site Under Construction</h1>
+        <div class="mt-5">
+            <!-- <div>
+                <h1>Internship Administration Staff</h1>
+                <h1>Bayucaraka UAV Research Team</h1>
+                <p>January - February 2024</p>
+            </div>
+            <div>
+                <h1>Internship Administration Staff</h1>
+                <h1>Bayucaraka UAV Research Team</h1>
+                <p>January - February 2024</p>
+            </div> -->
+        <!-- </div> -->
+    </div> -->
+</div>
+</body>
+<script src="script.js"></script>
+</html>
