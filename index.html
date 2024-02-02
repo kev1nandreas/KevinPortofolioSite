@@ -7,10 +7,17 @@
     <title>My Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <style>
         * {
             scroll-behavior: smooth;
-            scroll-margin-top: 8rem;
+            scroll-margin-top: 2rem;
         }
     </style>
 </head>
@@ -19,47 +26,49 @@
     <div id="app">
 
         <div class="bg-sky-500 text-white fixed z-10 right-0 top-0 left-0">
-                <div class="relative border-2 border-red-500 p-2">
-                    <div class="font-bold text-center text-xl inline-block ml-4 lg:ml-32">Kevin Andreas</div>
-                    <?xml version="1.0" ?>
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                    <svg class="absolute right-3 top-1 md:hidden" height="32px" fill="#ffffff" id="Layer_1"
-                        style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px"
-                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path
-                            d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
-                    </svg>
+            <div class="p-2 px-6 md:flex">
+                <div class="font-bold text-center text-xl inline-block md:basis-2/4">Kevin Andreas</div>
+                <?xml version="1.0" ?>
+                <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg class="absolute right-3 top-1 md:hidden" height="32px" fill="#ffffff" id="Layer_1"
+                    style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+                </svg>
 
-                    <div class="absolute text-center hidden md:inline-block right-2 top-2 lg:right-20">
-                        <a href="#home" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Home</a>
-                        <a href="#education"
-                            class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Education</a>
-                        <a href="#activity"
-                            class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Activity</a>
-                        <a href="#experience"
-                            class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Experience</a>
-                        <a href="loginpage.html" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Log
-                            In</a>
-                    </div>
-
+                <div class="text-center hidden md:inline-block md:basis-3/4">
+                    <a href="#home" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Home</a>
+                    <a href="#education" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Education</a>
+                    <a href="#activity" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Activity</a>
+                    <a href="#experience"
+                        class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Experience</a>
+                    <a href="loginpage.html" class="mx-5 hover:scale-105 hover:text-amber-400 hover:font-bold">Log
+                        In</a>
                 </div>
-            </div>
 
-        <div class="container-header text-white bg-sky-500 border-2 border-red-500" id="home">
-            <div class="relative">
-                <div class="p-4 pt-14 lg:pb-10 md:w-[50%] md:ml-10 lg:ml-28">
-                    <h1 class="md:mt-8 lg:mt-14 text-3xl md:text-5xl font-bold mt-4">I am Kevin Andreas</h1>
+            </div>
+        </div>
+
+
+
+        <div class="container-header text-white bg-sky-500 relative lg:px-52" id="home">
+
+            <div class="md:flex md:flex-row justify-center items-center">
+                <div class="p-4 lg:pb-10 lg:basis-3/5">
+                    <h1 class="mt-14 md:mt-16 lg:mt-20 text-3xl md:text-5xl font-bold">I am Kevin Andreas</h1>
                     <h1 class="text-2xl md:text-4xl">Informatics Student</h1>
-                    <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque explicabo dolores
-                        iure aut quisquam hic, alias quidem facere, ipsa, repudiandae optio incidunt adipisci dicta
-                        voluptatum quod natus. Nobis, harum nostrum!</p>
+                    <p class="my-5">Passionate first-year student thriving on challenges and the excitement of learning.
+                        My journey involves active participation in diverse organizations and committees, cultivating
+                        valuable leadership, administration, and time management skills. Eager to immerse myself in
+                        community activities, seeking not only to contribute but also to further develop my abilities in
+                        a dynamic and collaborative environment.</p>
                     <div class="flex">
                         <a class="rounded-md p-3 pl-4 md:w-32 md:h-13 bg-blue-700"
                             href="https://api.whatsapp.com/send?phone=6287895872546" target="_blank"><button>Reach Me
                                 &RightArrow;</button></a>
                         <a class="rounded-md p-3 md:w-40 md:h-13 ml-3 bg-white text-blue-700" href="#"><button>View
-                                Portofolio &RightArrow;</button></a>
+                                Portfolio &RightArrow;</button></a>
                     </div>
                     <div class="flex mt-7 mb-3">
                         <a href="#" class="mr-8">&raquo; Instagram</a>
@@ -68,16 +77,22 @@
                     </div>
                 </div>
 
-                <img src="img/selfphoto.png" alt=""
-                    class="hidden md:inline-block absolute md:-right-12 lg:right-0 bottom-0 w-[32rem]">
+                <img src="img/selfphoto.png" alt="" class="hidden lg:inline-block scale-125 mt-14">
             </div>
         </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0EA5E9" fill-opacity="1"
+                    d="M0,288L24,261.3C48,235,96,181,144,176C192,171,240,213,288,208C336,203,384,149,432,106.7C480,64,528,32,576,58.7C624,85,672,171,720,181.3C768,192,816,128,864,96C912,64,960,64,1008,90.7C1056,117,1104,171,1152,202.7C1200,235,1248,245,1296,229.3C1344,213,1392,171,1416,149.3L1440,128L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+                </path>
+            </svg>
+        </div>
 
-        <div class="md:mx-52 md:mt-10 p-5">
-            <div id="education" class="">
-                <h1 class="md:text-5xl text-4xl font-bold">Education</h1>
-                <div class="mt-5 md:flex">
-                    <div class="bg-slate-200 rounded-lg md:basis-1/2 p-8 w-full mt-5">
+        <div class="p-5">
+            <div id="education">
+                <h1 class="md:text-6xl text-5xl font-bold text-center">Education</h1>
+                <div class="mt-5 flex flex-wrap gap-6 justify-center">
+                    <div class="bg-slate-200 rounded-lg p-8 lg:max-w-lg max-w-screen-sm shadow-lg">
                         <h1 class="text-3xl font-bold">2020 - 2023</h1>
                         <p class="text-2xl">Natural Science</p>
                         <div class="flex items-center">
@@ -89,7 +104,7 @@
                             fuga tempore ea debitis?</p>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg md:basis-1/2 p-8 w-full md:ml-5 mt-5">
+                    <div class="bg-slate-200 rounded-lg p-8 lg:max-w-lg max-w-screen-sm shadow-lg">
                         <h1 class="text-3xl font-bold">2023 - Now</h1>
                         <p class="text-2xl">Informatics Engineering</p>
                         <div class="flex items-center">
