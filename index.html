@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portofolio</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+
     <style>
         * {
             scroll-behavior: smooth;
             scroll-margin-top: 6rem;
+            user-select: none;
         }
     </style>
 </head>
@@ -25,14 +25,18 @@
 <body>
     <div id="app">
 
+
+
         <div class="bg-sky-500 text-white fixed z-10 right-0 top-0 left-0">
             <div class="p-2 md:py-6 px-6 md:flex">
                 <div class="font-bold text-center text-xl inline-block md:pl-6 lg:basis-2/4">Kevin Andreas</div>
                 <?xml version="1.0" ?>
                 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                <svg class="absolute right-3 top-1 md:hidden" height="32px" fill="#ffffff" id="Layer_1"
-                    style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px"
-                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg @click="navBar=!navBar"
+                    class="absolute right-3 top-1 md:hidden hover:scale-105 cursor-pointer active:rotate-90 duration-500"
+                    height="32px" fill="#ffffff" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1"
+                    viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path
                         d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
                 </svg>
@@ -48,9 +52,21 @@
                 </div>
 
             </div>
+            <div v-if="navBar"
+                class="animate__animated animate__fadeIn text-center flex flex-col gap-3 text-black bg-white bg-opacity-50 p-1">
+                <a @click="navBar=!navBar" href="#home"
+                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Home</a>
+                <a @click="navBar=!navBar" href="#education"
+                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Education</a>
+                <a @click="navBar=!navBar" href="#activity"
+                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Activity</a>
+                <a @click="navBar=!navBar" href="#experience"
+                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Experience</a>
+                <a @click="navBar=!navBar" href="loginpage.html"
+                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Log
+                    In</a>
+            </div>
         </div>
-
-
 
         <div class="container-header text-white bg-sky-500 relative lg:px-52" id="home">
 
@@ -67,7 +83,8 @@
                         <a class="rounded-md p-3 pl-4 md:w-32 md:h-13 bg-blue-700"
                             href="https://api.whatsapp.com/send?phone=6287895872546" target="_blank"><button>Reach Me
                                 &RightArrow;</button></a>
-                        <a class="rounded-md p-3 md:w-40 md:h-13 ml-3 bg-white text-blue-700" href="#education"><button>View
+                        <a class="rounded-md p-3 md:w-32 md:h-13 ml-3 bg-white text-blue-700"
+                            href="#education"><button>View
                                 More &RightArrow;</button></a>
                     </div>
                     <div class="flex mt-7 mb-3">
@@ -90,8 +107,8 @@
 
         <div class="p-5">
             <div id="education">
-                <h1 class="md:text-6xl text-5xl font-bold text-center pb-5">Education</h1>
-                <div class="mt-5 flex flex-wrap gap-6 justify-center">
+                <h1 class="md:text-6xl text-5xl font-bold text-center">Education</h1>
+                <div class="mt-5 flex flex-wrap gap-7 justify-center">
                     <div class="bg-slate-200 rounded-lg p-8 lg:max-w-xl max-w-screen-sm shadow-lg">
                         <h1 class="text-3xl font-bold">2020 - 2023</h1>
                         <p class="text-2xl">Natural Science</p>
@@ -125,8 +142,24 @@
             </div>
         </div>
 
-        <div>
-            
+        <div class="mt-16 p-5">
+            <div id="experience">
+                <h1 class="md:text-6xl text-5xl font-bold text-center">Experience</h1>
+                <div class="mt-5">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-lg">
+                        <h1>Internsihip Adminstration Staff</h1>
+                        <h3>Bayucara UAV Research Team</h3>
+                        <p>January 2024 - now</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                            data-bs-target="#demo">Simple collapsible</button>
+                        <div id="demo" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
