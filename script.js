@@ -11,7 +11,8 @@ createApp({
             maxHeight5: true,
             maxHeight6: true,
             maxHeight7: true,
-
+            maxHeight8: true,
+            maxHeight9: true,
         }
     },
     computed: {
