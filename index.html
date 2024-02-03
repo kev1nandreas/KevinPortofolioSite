@@ -17,11 +17,16 @@
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
     <style>
         * {
             scroll-behavior: smooth;
             scroll-margin-top: 6rem;
             user-select: none;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -48,11 +53,11 @@
                 <div class="text-center hidden md:inline-block md:basis-3/4">
                     <a href="#home" class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Home</a>
                     <a href="#education" class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Education</a>
-                    <a href="#experience" class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Experience</a>
-                    <a href="#organization"
-                        class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Organization</a>
-                    <a href="loginpage.html" class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Log
-                        In</a>
+                    <a href="#experience"
+                        class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Experience</a>
+                    <a href="#achievement"
+                        class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Achievement</a>
+                    <a href="#contact" class="mx-4 hover:scale-105 hover:text-amber-400 hover:font-bold">Contact</a>
                 </div>
 
             </div>
@@ -64,11 +69,10 @@
                     class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Education</a>
                 <a @click="navBar=!navBar" href="#experience"
                     class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Experience</a>
-                <a @click="navBar=!navBar" href="#organization"
-                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Organization</a>
-                <a @click="navBar=!navBar" href="loginpage.html"
-                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Log
-                    In</a>
+                <a @click="navBar=!navBar" href="#achievement"
+                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Achievement</a>
+                <a @click="navBar=!navBar" href="#contact"
+                    class="mx-5 col hover:scale-105 select-none hover:text-amber-600 hover:font-bold">Contact</a>
             </div>
         </div>
 
@@ -83,12 +87,11 @@
                         valuable leadership, administration, and time management skills. Eager to immerse myself in
                         community activities, seeking not only to contribute but also to further develop my abilities in
                         a dynamic and collaborative environment.</p>
-                    <div class="flex">
-                        <a class="rounded-md p-3 pl-4 md:w-32 md:h-13 bg-blue-700"
-                            href="https://api.whatsapp.com/send?phone=6287895872546" target="_blank"><button>Reach Me
+                    <div class="flex gap-3">
+                        <a class="rounded-md p-3 bg-blue-700" href="https://api.whatsapp.com/send?phone=6287895872546"
+                            target="_blank"><button>Reach Me
                                 &RightArrow;</button></a>
-                        <a class="rounded-md p-3 md:w-32 md:h-13 ml-3 bg-white text-blue-700"
-                            href="#education"><button>View
+                        <a class="rounded-md p-3 bg-white text-blue-700" href="#education"><button>View
                                 More &RightArrow;</button></a>
                     </div>
                     <div class="flex mt-7">
@@ -113,7 +116,7 @@
             <div id="education">
                 <h1 class="md:text-6xl text-5xl font-bold text-center" data-aos="zoom-in">Education</h1>
                 <div class="mt-5 flex flex-wrap gap-7 justify-center">
-                    <div class="bg-slate-200 rounded-lg p-8 lg:max-w-xl max-w-screen-sm shadow-md" data-aos="slide-right">
+                    <div class="bg-slate-200 rounded-lg p-8 lg:max-w-xl max-w-screen-sm shadow-md" data-aos="fade-in">
                         <h1 class="text-3xl font-bold">2020 - 2023</h1>
                         <p class="text-2xl">Natural Science</p>
                         <div class="flex items-center">
@@ -127,7 +130,7 @@
                         </p>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg p-8 lg:max-w-xl max-w-screen-sm shadow-md" data-aos="slide-left">
+                    <div class="bg-slate-200 rounded-lg p-8 lg:max-w-xl max-w-screen-sm shadow-md" data-aos="fade-in">
                         <h1 class="text-3xl font-bold">2023 - Now</h1>
                         <p class="text-2xl">Informatics Engineering</p>
                         <div class="flex items-center">
@@ -150,16 +153,17 @@
             <div id="experience">
                 <h1 class="md:text-6xl text-5xl font-bold text-center" data-aos="zoom-in">Experience</h1>
                 <div class="mt-5 flex justify-center flex-wrap gap-4 ">
-                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[27.5rem]" data-aos="fade-in">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
                         <img class="float-right ml-3 mt-2 rounded-full" width="90rem" src="img/bayucaraka.png" alt="">
                         <h1 class="text-2xl font-bold">Bayucara UAV Research Team</h1>
-                        <h3 class="text-xl font-semibold italic">Internship Adminstration Staff</h3>
+                        <h3 class="text-lg font-semibold italic">Internship Adminstration Staff</h3>
                         <p>January 2024 - now</p>
                         <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
                             <div @click="maxHeight1=!maxHeight1"
                                 class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
                                 More Info &DownArrow;</div>
-                            <div class="p-2" :class="{'hidden': maxHeight1}">As an Administration Intern at Bayucara UAV
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight1}">As an
+                                Administration Intern at Bayucara UAV
                                 Research Team, I mastered itinerary planning, team admin, and organizational tasks. I
                                 optimized schedules, facilitated seamless communication, and honed my adaptability in a
                                 collaborative environment. This experience laid a strong foundation for my passion in
@@ -167,17 +171,18 @@
                         </div>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[27.5rem]" data-aos="fade-in">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
                         <img class="float-right ml-3 mt-2 rounded-full" width="90rem" src="img/alpha.jpeg" alt="">
                         <h1 class="text-2xl font-bold">
                             Alpha Academy</h1>
-                        <h3 class="text-xl font-semibold italic">Internship Academic Division Staff</h3>
-                        <p>February 2024 - now</p>
+                        <h3 class="text-lg font-semibold italic">Internship Academic Division Staff</h3>
+                        <p>February 2024 - now</p><br>
                         <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
                             <div @click="maxHeight2=!maxHeight2"
                                 class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
                                 More Info &DownArrow;</div>
-                            <div class="p-2" :class="{'hidden': maxHeight2}">I excelled in crafting geoscience related
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight2}">I
+                                excelled in crafting geoscience related
                                 feeds, coordinating tutors, and maintaining academic quality. I played a crucial role in
                                 enhancing communication, scheduling tutors, and implementing rigorous quality checks,
                                 contributing to an elevated learning environment. Additionally, I successfully
@@ -186,32 +191,82 @@
                         </div>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[27.5rem]" data-aos="fade-in">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
+                        <img class="float-right ml-3 mt-2 rounded-full" width="90rem" src="img/ppsn.jpeg" alt="">
+                        <h1 class="text-2xl font-bold">Perhimpunan Pelajar Sains Nasional (PPSN)</h1>
+                        <ul>
+                            <li>
+                                <h3 class="text-lg font-semibold italic">Head of Academic Management Division</h3>
+                                <p>November 2023 - now</p>
+                            </li>
+                            <li>
+                                <h3 class="text-lg font-semibold italic">Associate of Academic, Research, and Science
+                                </h3>
+                                <p>September 2022 - October 2023</p>
+                            </li>
+                        </ul>
+
+                        <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
+                            <div @click="maxHeight1=!maxHeight1"
+                                class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
+                                More Info &DownArrow;</div>
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight1}">As an
+                                Administration Intern at Bayucara UAV
+                                Research Team, I mastered itinerary planning, team admin, and organizational tasks. I
+                                optimized schedules, facilitated seamless communication, and honed my adaptability in a
+                                collaborative environment. This experience laid a strong foundation for my passion in
+                                administration and teamwork.</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
+                        <img class="float-right ml-3 mt-2 rounded-full" width="90rem" src="img/alpha.jpeg" alt="">
+                        <h1 class="text-2xl font-bold">
+                            Technopreneurship Development Center (TDC) ITS</h1>
+                        <h3 class="text-lg font-semibold italic">Member</h3>
+                        <p>October 2023 - now</p>
+                        <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
+                            <div @click="maxHeight2=!maxHeight2"
+                                class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
+                                More Info &DownArrow;</div>
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight2}">I
+                                excelled in crafting geoscience related
+                                feeds, coordinating tutors, and maintaining academic quality. I played a crucial role in
+                                enhancing communication, scheduling tutors, and implementing rigorous quality checks,
+                                contributing to an elevated learning environment. Additionally, I successfully
+                                coordinated tryouts, managing logistics and ensuring a seamless evaluation process.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
                         <img class="float-right ml-3 mt-2 rounded-full" width="90rem" src="img/mabacup.jpg" alt="">
                         <h1 class="text-2xl font-bold">Maba Cup ITS 2023</h1>
-                        <h3 class="text-xl font-semibold italic">Grand Event Staff</h3>
+                        <h3 class="text-lg font-semibold italic">Grand Event Staff</h3>
                         <p>September 2023 - Desember 2023</p><br>
                         <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
                             <div @click="maxHeight3=!maxHeight3"
                                 class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
                                 More Info &DownArrow;</div>
-                            <div class="p-2" :class="{'hidden': maxHeight3}">As the Grand Event Staff for Maba Cup 2023,
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight3}">As the
+                                Grand Event Staff for Maba Cup 2023,
                                 I orchestrated the successful execution of opening and closing events, from concept to
                                 on-site coordination. With a keen eye for detail, I managed logistics, vendor
                                 relationships, and timelines, ensuring a seamless experience</div>
                         </div>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[27.5rem]" data-aos="fade-in">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
                         <img class="float-right ml-3 mt-2 rounded-full" width="90rem" src="img/schematics.jpeg" alt="">
                         <h1 class="text-2xl font-bold">Schematics NLC 2023</h1>
-                        <h3 class="text-xl font-semibold italic">Internship Staff</h3>
+                        <h3 class="text-lg font-semibold italic">Internship Staff</h3>
                         <p>September 2023 - October 2023</p><br>
                         <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
                             <div @click="maxHeight4=!maxHeight4"
                                 class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
                                 More Info &DownArrow;</div>
-                            <div class="p-2" :class="{'hidden': maxHeight4}">As an Internship Staff for Schematics NLC
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight4}">As an
+                                Internship Staff for Schematics NLC
                                 2023 at Schematics ITS, I play a crucial role in supporting the success of the
                                 competition. My tasks involve aiding in the execution of Schematics NLC 2023, a
                                 competition designed to enhance logical and analytical thinking among senior high school
@@ -221,17 +276,18 @@
                         </div>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[27.5rem]" data-aos="fade-in">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
                         <img class="float-right ml-3 mt-2 rounded-full" width="90rem" src="img/toiki.jpeg" alt="">
                         <h1 class="text-2xl font-bold">
-                            Project Leader of Try Out OSN TOIKI Archean 2023</h1>
-                        <h3 class="text-xl font-semibold italic">Tim Olimpiade Ilmu Kebumian Indonesia (TOIKI)</h3>
+                            Tim Olimpiade Ilmu Kebumian Indonesia (TOIKI)</h1>
+                        <h3 class="text-lg font-semibold italic">Project Leader of Try Out OSN TOIKI Archean 2023</h3>
                         <p>June 2023 - August 2023</p>
                         <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
                             <div @click="maxHeight5=!maxHeight5"
                                 class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
                                 More Info &DownArrow;</div>
-                            <div class="p-2" :class="{'hidden': maxHeight5}">I undertake the pivotal role of
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight5}">I
+                                undertake the pivotal role of
                                 coordinating team members throughout the entire project lifecycle. My responsibilities
                                 include meticulous planning and execution of joint activities with existing divisions to
                                 ensure seamless collaboration. I am dedicated to ensuring the smooth execution of each
@@ -240,17 +296,18 @@
                         </div>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[27.5rem]" data-aos="fade-in">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem]" data-aos="fade-in">
                         <img class="float-right ml-3 mt-2 rounded-full" width="90rem"
                             src="img/learn_earth_science_les_logo.jpeg" alt="">
                         <h1 class="text-2xl font-bold">Learn Earth Science (LES)</h1>
-                        <h3 class="text-xl font-semibold italic">Event and Operation Division</h3>
+                        <h3 class="text-lg font-semibold italic">Event and Operation Division</h3>
                         <p>January 2022 - Maret 2022</p><br>
                         <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
                             <div @click="maxHeight6=!maxHeight6"
                                 class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
                                 More Info &DownArrow;</div>
-                            <div class="p-2" :class="{'hidden': maxHeight6}">In the Event and Operations Division, I
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight6}">In the
+                                Event and Operations Division, I
                                 excel in managing event operations, overseeing tutorial sessions, orchestrating
                                 promotional media strategies, and facilitating connections between tutors and students.
                                 Committed to optimizing event and operational efficiency for a holistic learning
@@ -258,15 +315,16 @@
                         </div>
                     </div>
 
-                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[27.5rem] text-center" data-aos="fade-in">
+                    <div class="bg-slate-200 rounded-lg p-8 shadow-md w-[30rem] text-center" data-aos="fade-in">
                         <h1 class="text-2xl font-bold">And numerous geoscience tutoring experience</h1>
-                        <h3 class="text-xl font-semibold italic">in various institution</h3>
-                        <p>January 2023 - now</p><br>
+                        <h3 class="text-lg font-semibold italic">in various institution</h3>
+                        <p>January 2023 - now</p>
                         <div class="my-2 p-2 overflow-hidden bg-slate-50 rounded-lg">
                             <div @click="maxHeight7=!maxHeight7"
                                 class="text-center font-bold text-orange-500 cursor-pointer animate-[bounce_1.5s_infinite]">
                                 More Info &DownArrow;</div>
-                            <div class="p-2" :class="{'hidden': maxHeight7}">As an Earth Science Olympiad Tutor, I
+                            <div class="animate__animated animate__fadeIn p-2" :class="{'hidden': maxHeight7}">As an
+                                Earth Science Olympiad Tutor, I
                                 provide freelance tutoring services in various institutions. My role involves imparting
                                 comprehensive knowledge and fostering a deep understanding of Earth science concepts to
                                 students preparing for Olympiad competitions. With a focus on personalized learning, I
@@ -276,6 +334,91 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="mt-16 p-3">
+            <div id="achievement">
+                <h1 class="md:text-6xl text-5xl font-bold text-center" data-aos="zoom-in">Achievement</h1>
+                <div class="container mt-5">
+                    <div>
+                        <div class="relative">
+                            <h1 class="text-2xl font-bold">Excellent Performance for International Earth Science
+                                Olympiad Art in Earth Science 2023
+                            </h1>
+                            <p class="absolute top-0 right-0 text-xl">August 2023</p>
+                        </div>
+                        <h3 class="text-xl">Issued by International Geoscience Education Organization (IGEO)</h3>
+                        <p class="my-4">Received an excellent predicate (equal to gold medals) in the Art in Earth
+                            Science, one of
+                            the subtests in the International Earth Science Olympiad, where each participant will
+                            present their creative talents through the works of art, specifically art that is in some
+                            way connected to Earth Science.</p>
+                    </div>
+
+                    <div>
+                        <div class="relative">
+                            <h1 class="text-2xl font-bold">
+                                Good Performance in the Data Mining Test International Earth Science Olympiad 2023
+                            </h1>
+                            <p class="absolute top-0 right-0 text-xl">August 2023</p>
+                        </div>
+                        <h3 class="text-xl">Issued by International Geoscience Education Organization (IGEO)</h3>
+                        <p class="my-4">I received a good predicate (equal to honorable mention) in the Data Mining
+                            Test, one of the subtests in the International Earth Science Olympiad, followed by 20+
+                            countries and more than 100+ students worldwide.</p>
+                    </div>
+
+                    <div>
+                        <div class="relative">
+                            <h1 class="text-2xl font-bold">Bronze Medalist in Earth Science, Indonesia National Science
+                                Competition
+                            </h1>
+                            <p class="absolute top-0 right-0 text-xl">October 2022</p>
+                        </div>
+                        <h3 class="text-xl">Issued by Indonesia Ministry of Education, Culture, Research, and Technology
+                        </h3>
+                        <p class="mt-4">Won the bronze medals (top 30 students) of over twenty thousand students across
+                            Indonesia in the National Science Olympiad, a science competition for Indonesian students
+                            held by the Indonesian Ministry of Education and Culture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0EA5E9" fill-opacity="1"
+                d="M0,224L80,224C160,224,320,224,480,240C640,256,800,288,960,277.3C1120,267,1280,213,1360,186.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+        <div id="contact" class="bg-sky-500 text-white flex flex-col items-center">
+            <h1 class="text-5xl text-center font-bold mb-8">Contact</h1>
+
+            <div class="text-center my-3 w-fit">
+                <div class="text-xl font-semibold">Email</div>
+                <p>kevin.andreascn@gmail.com</p>
+            </div>
+
+            <div class="text-center my-3 w-fit">
+                <div class="text-xl font-semibold">Linked In</div>
+                <p>Kevin Andreas</p>
+            </div>
+
+            <div class="text-center my-3 w-fit">
+                <div class="text-xl font-semibold">
+                    <svg class="inline-block" xmlns="http://www.w3.org/2000/svg"  width="1.5rem" fill="#ffffff" viewBox="0 0 50 50">
+                        <path
+                            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                        </path>
+                    </svg>
+                    Instagram</div>
+                <p>@kev1nandreas</p>
+            </div>
+
+            <div class="text-center my-3 w-fit">
+                <div class="text-xl font-semibold">Github</div>
+                <p>kev1nandreas</p>
+            </div>
+            <br>
         </div>
 
     </div>
